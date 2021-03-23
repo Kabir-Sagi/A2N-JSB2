@@ -3,8 +3,14 @@
    <script>
       function f1() {
           var input1Ref= document.getElementById('t1')
-           console.log(input1Ref.value)
-            
+         //   console.log(input1Ref.value)
+
+          var passwordRef=  document.getElementById('password')
+         //  console.log(passwordRef.value)
+      var p1Ref=     document.getElementById('p1')
+      var p2Ref=     document.getElementById('p2')
+             p1Ref.innerText = input1Ref.value
+             p2Ref.innerText = passwordRef.value
 
       }
    </script>
@@ -18,6 +24,10 @@
      Password:<input id="password" type="password" />
      </p>
       <input type="button" value="Login" onclick="f1()"  />
+      <div>
+         <p id="p1">A2N</p>
+         <p id="p2">Academy</p>
+      </div>
      </div>
 </body>
 </html>
