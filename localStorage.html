@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+   
+    <title>Local storage</title>
+    <script>
+        function fnSetData(name){
+          localStorage.setItem('username',name)
+        }
+        function fnGetData(){
+          var uname= localStorage.getItem('username')
+          alert(uname)
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fnSetData('Kabir')">Set Data</button> 
+    <button onclick="fnGetData()">Get Data</button>
+</body>
+</html>

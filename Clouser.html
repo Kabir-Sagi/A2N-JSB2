@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+
+          function fn(){
+            var i =0
+             return function(){
+
+                 i = i + 1
+                 document.getElementById('btn').innerText = "Clicked Me "+i+" Times"
+                 console.log(i)
+             }
+
+          }
+
+
+        function fn() {
+            var i = 0
+            return function () {
+                i = i + 1
+            }
+
+        }
+        var f1 = fn()
+
+
+
+
+
+
+
+
+
+        function fn1() {
+
+            i = 5
+        }
+        var f1 = fn()
+    </script>
+</head>
+
+<body>
+    <button id="btn" onclick="f1()">Click Me</button>
+    <button onclick="fn1()">Dont Click Me</button>
+</body>
+
+</html>
